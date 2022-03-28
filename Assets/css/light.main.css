@@ -1,0 +1,63 @@
+/* Buttons Style */
+#Nbtn {
+    background: #e5e7eb;
+    padding: 9px 13px;
+    border: 0;
+    border-radius: 3px;
+    box-shadow: 0 2px 6px rgb(0 21 64 / 17%), 0 10px 20px rgb(0 21 64 / 6%);
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+#Nbtn img , #lbtn img{
+    width: 25px;
+}
+#lbtn {
+    background: #094a8d;
+    padding: 10px 13px;
+    border: 0;
+    border-radius: 3px;
+    box-shadow: 0 2px 6px rgb(0 21 64 / 17%), 0 10px 20px rgb(0 21 64 / 6%);
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+/* light Style */
+body.light {
+    background: #fefffc;
+    color: #fff;
+}
+.light .card{
+background-color: #094a8d;
+}
+.light .title {
+    color: #001b54;
+    border-color: #fefffc;
+}
+.light .title:before {
+    background-color: #77d0f0;
+}
+.light .progress-container {
+    background: #001b54;
+}
+.light .progress-container::before {
+    background: #77d0f0;
+    color: #001b54;
+}
+.light .social .my-social:before {
+    color: #fefffc;
+}
+.light .social .my-social:hover::before {
+    color: #001b54;
+}
+body.light::-webkit-scrollbar-track {
+    background: #fefffc; 
+  }
+  
+  body.light::-webkit-scrollbar-thumb {
+    background-color: #094a8d; 
+    border-radius: 5px; 
+  }

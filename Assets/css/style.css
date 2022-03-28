@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal&family=Ubuntu&display=swap');
+@import url(/Assets/css/light.main.css);
+body {
+    background-color: #0f0f15;
+    color: #fff;
+    font-family: 'Ubuntu','Tajawal', sans-serif;
+    user-select: none;
+}
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.card {
+    background-color: #1b223b;
+    padding: 40px;
+    margin: 10px 0px;
+    text-align: center;
+    border-radius: 5px;
+}
+.Profile-img {
+    width: 50%;
+    border: 4px solid #f8f7f7;
+    border-radius: 100%;
+    margin: 7px 0px;
+}
+.name {
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+.bio {
+    font-size: 14px;
+}
+.title {
+    color: #17adce;
+    position: relative;
+    font-weight: 700;
+    letter-spacing: 0px;
+    text-transform: capitalize;
+    text-align: center;
+    border: 2px solid #0f0f15;
+    padding: 5px 11px 3px 11px;
+}
+.title:before {
+    left: 8px;
+}
+.title:before {
+    background-color: #124343;
+    position: absolute;
+    content: '';
+    height: 3px;
+    width: 60px;
+    bottom: -5px;
+}
+label {
+    font-size: 19px;
+}
+progress {
+    opacity: 0;
+  }
+  .progress-container {
+    position: relative;
+    display: inline-block;
+    background: #f8f7f7;
+    height: 25px;
+    border-radius: 3px;
+    overflow: hidden;
+    width: 406px;
+    margin: 2px 0px;
+}
+  .progress-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #17adce;
+    font-family: "Font Awesome 6 Brands",'Ubuntu';
+    font-weight: 400;
+    color: #1b223b;
+    line-height: 1.35;
+    font-size: 19px;
+  }
+  .progress-container.html::before {
+    width: 95%;
+    content: "\f13b";
+  }
+  .progress-container.html:hover::before {
+    content: "\f13b\ HTML";
+  }
+  .progress-container.css::before {
+    width: 77%;
+    content: "\f38b";
+  }
+  .progress-container.css:hover::before {
+    content: "\f38b\ CSS";
+  }
+  .progress-container.js::before {
+    width: 50%;
+    content: "\f3b8";
+  }
+  .progress-container.js:hover:before {
+    content: "\f3b8\ Javascript";
+  }
+  .progress-container.bst::before {
+    width: 40%;
+    content: "\f836";
+  }
+  .progress-container.bst:hover::before {
+    content: "\f836\ Bootstrap";
+  }
+  .social ul {
+    list-style: none;
+    text-align: -webkit-center;
+    margin: 0;
+    padding: 0;
+}
+.social li {
+    display: inline-block;
+    margin: 10px 15px;
+    font-size: 50px;
+}
+.social .my-social:before {
+    content: "";
+    font-family: "Font Awesome 6 Brands";
+    font-weight: 400;
+    color: #e5e7eb;
+}
+.social .my-social:hover:before {
+    color: #17adce;
+}
+.my-social {
+    text-decoration: none;
+}
+.social .my-social[name="twitter"]:before {
+    content: "\f099";
+}
+.social .my-social[name="Facebook"]:before {
+    content: "\f09a";
+}
+.social .my-social[name="telegram"]:before {
+    content: "\f2c6";
+}
+.social .my-social[name="tiktok"]:before {
+    content: "\e07b";
+}
+.social .my-social[name="github"]:before {
+    content: "\f09b";
+}
+p.qoute-space {
+    display: inline-block;
+    font-style: italic;
+    font-weight: bold;
+    user-select: all;
+}
+::-moz-selection {
+    color: #1b223b;
+    background: #17adce;
+  }
+  
+  ::selection {
+    color: #1b223b;
+    background: #17adce;
+  }
+  body::-webkit-scrollbar {
+    width: 12px; 
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #1b223b; 
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #17adce; 
+    border-radius: 5px; 
+  }
+@media only screen and (max-width: 600px) {
+    .card {
+        width: 60%;
+    }
+    .progress-container {
+        width: auto;
+    }
+}
+@media only screen and (min-width: 600px) {
+    div.card {
+        width: 60%;
+    }
+    .progress-container {
+        width: 210px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    div.card {
+        width: 50%;
+    }
+    .progress-container {
+        width: 300px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    div.card {
+        width: 30%;
+    }
+    .progress-container {
+        width: 400px;
+    }
+}
